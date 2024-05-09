@@ -16,18 +16,24 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     input_data = request.form.to_dict()
-    #print(input_data)
-    input_data['Children'] = int(input_data['Children'])
-    input_data['Additional Features Number'] = int(input_data['Additional Features Number'])
 
-    for column in ['Store Sales', 'Net Weight', 'Package Weight', 'Store Area', 'Frozen Area']:
-        input_data[column] = float(input_data[column])
+    if input_data:
+        #print(input_data)
+        input_data['Children'] = int(input_data['Children'])
+        input_data['Additional Features Number'] = int(input_data['Additional Features Number'])
 
+        for column in ['Store Sales', 'Net Weight', 'Package Weight', 'Store Area', 'Frozen Area']:
+            input_data[column] = float(input_data[column])
+
+        
+        #print(np.array(list(input_data.values()))).reshape(1, -1)
+        input_data = np.array(list(input_data.values())).reshape(1, -1)
+        prediction = model.predict(input_data)
+        return jsonify({'prediction': prediction[0]})
     
-    #print(np.array(list(input_data.values()))).reshape(1, -1)
-    input_data = np.array(list(input_data.values())).reshape(1, -1)
-    prediction = model.predict(input_data)
-    return jsonify({'prediction': prediction[0]})
+    else:
+        return jsonify({'error': 'there is no entered data'})
+    
 
 if __name__ == '__main__':
     app.run(debug=True)

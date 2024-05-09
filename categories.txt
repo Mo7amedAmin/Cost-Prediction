@@ -1,0 +1,86 @@
+Status
+['Single' 'Married']
+--------------------
+Gender
+['Female' 'Male']
+--------------------
+Education
+['bachelors degree' 'high school degree' 'partial college'
+ 'partial high school' 'graduate degree']
+--------------------
+Work
+['professional' 'management' 'skilled manual' 'manual' 'clerical']
+--------------------
+Place Code1
+['H11go' 'S04ne' 'L05es' 'S03le' 'M10da' 'A17co' 'O09ba' 'S01em' 'P07nd'
+ 'B06ls' 'T02ma' 'V19ia' 'G16ra' 'B14on' 'C15ho' 'V13er' 'M12ty' 'B08am'
+ 'S18co']
+--------------------
+Place Code2
+['ZA' 'WA' 'CA' 'YU' 'GU' 'VE' 'OR' 'BC' 'JA' 'DF']
+--------------------
+Order
+['Cleaning Supplies' 'Snack Foods' 'Magazines' 'Dairy' 'Vegetables'
+ 'Candles' 'Pain Relievers' 'Beer and Wine' 'Frozen Desserts'
+ 'Breakfast Foods' 'Bread' 'Baking Goods' 'Starchy Foods' 'Drinks'
+ 'Electrical' 'Meat' 'Hardware' 'Hot Beverages' 'Canned Tuna'
+ 'Jams and Jellies' 'Fruit' 'Hygiene' 'Miscellaneous' 'Canned Shrimp'
+ 'Cold Remedies' 'Kitchen Products' 'Candy' 'Paper Products'
+ 'Canned Sardines' 'Specialty' 'Carbonated Beverages' 'Canned Soup'
+ 'Bathroom Products' 'Seafood' 'Decongestants' 'Packaged Vegetables'
+ 'Frozen Entrees' 'Canned Clams' 'Plastic Products' 'Pure Juice Beverages'
+ 'Pizza' 'Side Dishes' 'Canned Anchovies' 'Eggs' 'Canned Oysters']
+--------------------
+Department
+['Household department' 'Snack Foods department' 'Periodicals department'
+ 'Dairy department' 'Produce department' 'Health and Hygiene department'
+ 'Frozen Foods department' 'Alcoholic Beverages department'
+ 'Baked Goods department' 'Baking Goods department'
+ 'Starchy Foods department' 'Beverages department' 'Meat department'
+ 'Checkout department' 'Canned Foods department' 'Deli department'
+ 'Snacks department' 'Seafood department' 'Breakfast Foods department'
+ 'Canned Products department' 'Eggs department' 'Carousel department']
+--------------------
+Brand
+['Red Wing' 'Nationeel' 'Excel' 'Carlson' 'Hermanos' 'Steady' 'Golden'
+ 'Top Measure' 'Tri-State' 'PigTail' 'Carrington' 'Sphinx' 'Plato'
+ 'Jardon' 'Skinner' 'Best Choice' 'Quick' 'Landslide' 'Portsmouth'
+ 'High Top' 'Mighty Good' 'Dollar' 'Tell Tale' 'Black Tie' 'Super'
+ 'Modell' 'Sunset' 'Gauss' 'Blue Label' 'Good' 'Token' 'Fantastic'
+ 'Red Spade' 'Club' 'CDR' 'High Quality' 'Imagine' 'American'
+ 'Consolidated' 'Hilltop' 'Better' 'Faux Products' 'Akron' 'Fast' 'Musial'
+ 'Fort West' 'Ebony' 'Discover' 'Fabulous' 'Bravo' 'Booker' 'Dual City'
+ 'Denny' 'Shady Lake' 'Colony' 'BBB Best' 'Great' 'Just Right' 'Pearl'
+ 'Radius' 'Cutting Edge' 'Even Better' 'Special' 'Best' 'Applause'
+ 'Horatio' 'Bird Call' 'Excellent' 'Cormorant' 'Atomic' 'Lake' 'James Bay'
+ 'Johnson' 'Gorilla' 'Thresher' 'Jeffers' 'Big Time' 'Moms' 'Jumbo'
+ 'Pleasant' 'Gerolli' 'Giant' 'Choice' 'Monarch' 'Medalist' 'Washington'
+ 'Ship Shape' 'Gulf Coast' 'Walrus' 'Framton' 'Colossal' 'Robust' 'Toucan'
+ 'Footnote' 'Prelude' 'National' 'ADJ' 'Genteel' 'Urban' 'Toretti'
+ 'Tip Top' 'Blue Medal' 'Curlew' 'Symphony' 'Kiwi' 'Amigo' 'Queen'
+ 'Green Ribbon' 'King' 'Swell' 'Big City']
+--------------------
+Promotion Name
+['Dimes Off' 'Budget Bargains' 'Shelf Emptiers' 'Savings Galore'
+ 'Sale Winners' 'Weekend Discount' 'Price Winners' 'Shelf Clearing Days'
+ 'Big Time Discounts' 'Lottery Cash Registerion' 'Pick Your Savings' nan
+ 'Super Savers' 'Two Day Sale' 'Sale Sale Sale' 'Wallet Savers'
+ 'Money Savers' 'Save Price' 'Best Savings' 'Big Time Saving'
+ 'Bag Stuffer' 'Save It (Sale)' 'Dollar Days' 'Discount Frenzy'
+ 'Sales Days' 'Sale : Double Down' 'Coupon Spectacular' 'Three for One'
+ 'Super Duper Savers' 'GLD' 'Go For It' 'Mystery Sale' 'One Day Sale'
+ 'I Cant Believe It Sale' 'You Save Days' 'Double Your Savings'
+ 'Full Free' 'Saving Days' 'Roller Savings (High) ' 'Green Light Special'
+ 'Price Slashers' 'Price Cutters' 'Two for One' 'Promo Big'
+ 'Tip Top Savings' 'Price Destroyers' 'Best Price Savers'
+ 'Super Wallet Savers' 'Price Smashers' 'Fantastic Discounts']
+--------------------
+Store Kind
+['Deluxe' 'Supermarket' 'Gourmet' 'Mid-Size' 'Small Grocery']
+--------------------
+Is Recyclable?
+['recyclable' 'non recyclable']
+--------------------
+Yearly Income
+['10K+' '50K+' '30K+' '130K+' '70K+' '110K+' '90K+' '150K+']
+--------------------

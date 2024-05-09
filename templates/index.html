@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Cost Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name='Status' placeholder='Status' required="required" />
+        <input type="text" name='Gender' placeholder='Gender' required="required" />
+		<input type="text" name='Children' placeholder='Children' required="required" />
+		<input type="text" name='Education' placeholder='Education' required="required" />
+    <input type="text" name='Work' placeholder='Work' required="required" />
+    <input type="text" name='Place Code1' placeholder='Place Code1' required="required" />
+    <input type="text" name='Place Code2' placeholder='Place Code2' required="required" />
+    <input type="text" name='Order' placeholder='Order' required="required" />
+    <input type="text" name='Department' placeholder='Department' required="required" />
+    <input type="text" name='Brand' placeholder='Brand' required="required" />
+    <input type="text" name='Additional Features Number' placeholder='Additional Features Number' required="required" />
+    <input type="text" name='Promotion Name' placeholder='Promotion Name' required="required" />
+    <input type="text" name='Store Kind' placeholder='Store Kind' required="required" />
+    <input type="text" name='Store Sales' placeholder='Store Sales' required="required" />
+    <input type="text" name='Net Weight' placeholder='Net Weight' required="required" />
+    <input type="text" name='Package Weight' placeholder='Package Weight' required="required" />
+    <input type="text" name='Is Recyclable?' placeholder='Is Recyclable?' required="required" />
+    <input type="text" name='Yearly Income' placeholder='Yearly Income' required="required" />
+    <input type="text" name='Store Area' placeholder='Store Area' required="required" />
+    <input type="text" name='Frozen Area' placeholder='Frozen Area' required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

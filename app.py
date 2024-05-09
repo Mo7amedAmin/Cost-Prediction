@@ -15,10 +15,12 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    input_data = request.form.to_dict()
+    input_data = request
 
-    if input_data:
+    if input_data.is_json:
+        input_data = input_data.json
         #print(input_data)
+        #input_data.form.to_dict()
         input_data['Children'] = int(input_data['Children'])
         input_data['Additional Features Number'] = int(input_data['Additional Features Number'])
 

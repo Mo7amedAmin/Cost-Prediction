@@ -21,7 +21,7 @@ def predict():
 
     input_data = np.array(list(input_data.values())).reshape(1, -1)
     prediction = model.predict(input_data)
-    return jsonify({'prediction': prediction[0]})
+    return render_template('index.html', prediction_text='The predicted Cost is: '+str(round(prediction[0],2)))
     
 if __name__ == '__main__':
     app.run(debug=True)

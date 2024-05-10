@@ -6,30 +6,30 @@
 
     <style>
     html {
-      height: 130%;
+      height: 100%;
     }
     body {
-      margin: 0;
-      padding: 0;
+     
       font-family: sans-serif;
       background: linear-gradient(#141e30, #243b55);
     }
     .login-box h1 {
       color: #fff;
       text-align: center;
-      z-index: 1000;
     }
     form {
           display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
     }
     .login-box {
+      margin-top: 10px;
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 500px;
-      padding: 30px;
+      width: 900px;
+      padding: 15px;
       transform: translate(-50%, -50%);
       background: rgba(0,0,0,.5);
       box-sizing: border-box;
@@ -38,11 +38,10 @@
     }
     .login-box .user-box {
           display: block;
-    width: 45%;
-
-      margin-right: 20px; /* Adjust spacing between pairs */
+          width: 23%;
+      margin-right: 15px; /* Adjust spacing between pairs */
     }
-    .login-box .user-box select {
+    .login-box .user-box select,input {
       width: 100%;
       padding: 10px 0;
       font-size: 16px;
@@ -63,6 +62,11 @@
       outline: none;
       background: #141e30;
     }
+    .login-box .user-box input::placeholder {
+      
+      color: #fff;
+      
+    }
     .login-box .user-box label {
       display: none;
     }
@@ -75,10 +79,10 @@
     }
     .login-box form button {
       width: 100%;
-      padding: 10px 0;
+      padding: 5px 0;
       font-size: 16px;
       color: #fff;
-      margin-top: 40px;
+      margin-top: 20px;
       border: none;
       border-radius: 5px;
       background: #03e9f4;
@@ -125,6 +129,10 @@
           </select>
         </div>
         <div class="user-box">
+          <input type="text" name='Children' placeholder='Children'
+            required="required" />
+        </div>
+        <div class="user-box">
           <label>Education</label>
           <select name='Education' required="required">
             <option value disabled selected>Select Education</option>
@@ -153,7 +161,22 @@
             <option value="H11go">H11go</option>
             <option value="S04ne">S04ne</option>
             <option value="L05es">L05es</option>
-            <!-- Add more options if needed -->
+            <option value="S03le">S03le</option>
+            <option value="M10da">M10da</option>
+            <option value="A17co">A17co</option>
+            <option value="O09ba">O09ba</option>
+            <option value="S01em">S01em</option>
+            <option value="P07nd">P07nd</option>
+            <option value="B06ls">B06ls</option>
+            <option value="T02ma">T02ma</option>
+            <option value="V19ia">V19ia</option>
+            <option value="G16ra">G16ra</option>
+            <option value="B14on">B14on</option>
+            <option value="C15ho">C15ho</option>
+            <option value="V13er">V13er</option>
+            <option value="M12ty">M12ty</option>
+            <option value="B08am">B08am</option>
+            <option value="S18co">S18co</option>
           </select>
         </div>
         <div class="user-box">
@@ -163,7 +186,13 @@
             <option value="ZA">ZA</option>
             <option value="WA">WA</option>
             <option value="CA">CA</option>
-            <!-- Add more options if needed -->
+            <option value="YU">YU</option>
+            <option value="GU">GU</option>
+            <option value="VE">VE</option>
+            <option value="OR">OR</option>
+            <option value="BC">BC</option>
+            <option value="JA">JA</option>
+            <option value="DF">DF</option>
           </select>
         </div>
         <div class="user-box">
@@ -262,9 +291,119 @@
             <option value="Excel">Excel</option>
             <option value="Carlson">Carlson</option>
             <option value="Hermanos">Hermanos</option>
-            <option value="Steady">Steady</option>
+            <option value="Steady">Steady</option><option
+              value="Golden">Golden</option>
+            <option value="Top Measure">Top Measure</option>
+            <option value="Tri-State">Tri-State</option>
+            <option value="PigTail">PigTail</option>
+            <option value="Carrington">Carrington</option>
+            <option value="Sphinx">Sphinx</option>
+            <option value="Plato">Plato</option>
+            <option value="Jardon">Jardon</option>
+            <option value="Skinner">Skinner</option>
+            <option value="Best Choice">Best Choice</option>
+            <option value="Quick">Quick</option>
+            <option value="Landslide">Landslide</option>
+            <option value="Portsmouth">Portsmouth</option>
+            <option value="High Top">High Top</option>
+            <option value="Mighty Good">Mighty Good</option>
+            <option value="Dollar">Dollar</option>
+            <option value="Tell Tale">Tell Tale</option>
+            <option value="Black Tie">Black Tie</option>
+            <option value="Super">Super</option>
+            <option value="Modell">Modell</option>
+            <option value="Sunset">Sunset</option>
+            <option value="Gauss">Gauss</option>
+            <option value="Blue Label">Blue Label</option>
+            <option value="Good">Good</option>
+            <option value="Token">Token</option>
+            <option value="Fantastic">Fantastic</option>
+            <option value="Red Spade">Red Spade</option>
+            <option value="Club">Club</option>
+            <option value="CDR">CDR</option>
+            <option value="High Quality">High Quality</option>
+            <option value="Imagine">Imagine</option>
+            <option value="American">American</option>
+            <option value="Consolidated">Consolidated</option>
+            <option value="Hilltop">Hilltop</option>
+            <option value="Better">Better</option>
+            <option value="Faux Products">Faux Products</option>
+            <option value="Akron">Akron</option>
+            <option value="Fast">Fast</option>
+            <option value="Musial">Musial</option>
+            <option value="Fort West">Fort West</option>
+            <option value="Ebony">Ebony</option>
+            <option value="Discover">Discover</option>
+            <option value="Fabulous">Fabulous</option>
+            <option value="Bravo">Bravo</option>
+            <option value="Booker">Booker</option>
+            <option value="Dual City">Dual City</option>
+            <option value="Denny">Denny</option>
+            <option value="Shady Lake">Shady Lake</option>
+            <option value="Colony">Colony</option>
+            <option value="BBB Best">BBB Best</option>
+            <option value="Great">Great</option>
+            <option value="Just Right">Just Right</option>
+            <option value="Pearl">Pearl</option>
+            <option value="Radius">Radius</option>
+            <option value="Cutting Edge">Cutting Edge</option>
+            <option value="Even Better">Even Better</option>
+            <option value="Special">Special</option>
+            <option value="Best">Best</option>
+            <option value="Applause">Applause</option>
+            <option value="Horatio">Horatio</option>
+            <option value="Bird Call">Bird Call</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Cormorant">Cormorant</option>
+            <option value="Atomic">Atomic</option>
+            <option value="Lake">Lake</option>
+            <option value="James Bay">James Bay</option>
+            <option value="Johnson">Johnson</option>
+            <option value="Gorilla">Gorilla</option>
+            <option value="Thresher">Thresher</option>
+            <option value="Jeffers">Jeffers</option>
+            <option value="Big Time">Big Time</option>
+            <option value="Moms">Moms</option>
+            <option value="Jumbo">Jumbo</option>
+            <option value="Pleasant">Pleasant</option>
+            <option value="Gerolli">Gerolli</option>
+            <option value="Giant">Giant</option>
+            <option value="Choice">Choice</option>
+            <option value="Monarch">Monarch</option>
+            <option value="Medalist">Medalist</option>
+            <option value="Washington">Washington</option>
+            <option value="Ship Shape">Ship Shape</option>
+            <option value="Gulf Coast">Gulf Coast</option>
+            <option value="Walrus">Walrus</option>
+            <option value="Framton">Framton</option>
+            <option value="Colossal">Colossal</option>
+            <option value="Robust">Robust</option>
+            <option value="Toucan">Toucan</option>
+            <option value="Footnote">Footnote</option>
+            <option value="Prelude">Prelude</option>
+            <option value="National">National</option>
+            <option value="ADJ">ADJ</option>
+            <option value="Genteel">Genteel</option>
+            <option value="Urban">Urban</option>
+            <option value="Toretti">Toretti</option>
+            <option value="Tip Top">Tip Top</option>
+            <option value="Blue Medal">Blue Medal</option>
+            <option value="Curlew">Curlew</option>
+            <option value="Symphony">Symphony</option>
+            <option value="Kiwi">Kiwi</option>
+            <option value="Amigo">Amigo</option>
+            <option value="Queen">Queen</option>
+            <option value="Green Ribbon">Green Ribbon</option>
+            <option value="King">King</option>
+            <option value="Swell">Swell</option>
+            <option value="Big City">Big City</option>
           </select>
-        </div><div class="user-box">
+        </div>
+        <div class="user-box">
+          <input type="text" name='Additional Features Number'
+            placeholder='Additional Features Number' required="required" />
+        </div>
+        <div class="user-box">
           <label>Promotion Name</label>
           <select name='Promotion Name' required="required">
             <option value disabled selected>Select Promotion Name</option>
@@ -274,8 +413,96 @@
             <option value="Savings Galore">Savings Galore</option>
             <option value="Sale Winners">Sale Winners</option>
             <option value="Weekend Discount">Weekend Discount</option>
+            <option value="Price Winners">Price Winners</option>
+            <option value="Shelf Clearing Days">Shelf Clearing Days</option>
+            <option value="Big Time Discounts">Big Time Discounts</option>
+            <option value="Lottery Cash Registerion">Lottery Cash
+              Registerion</option>
+            <option value="Pick Your Savings">Pick Your Savings</option>
+            <option value="Super Savers">Super Savers</option>
+            <option value="Two Day Sale">Two Day Sale</option>
+            <option value="Sale Sale Sale">Sale Sale Sale</option>
+            <option value="Wallet Savers">Wallet Savers</option>
+            <option value="Money Savers">Money Savers</option>
+            <option value="Save Price">Save Price</option>
+            <option value="Best Savings">Best Savings</option>
+            <option value="Big Time Saving">Big Time Saving</option>
+            <option value="Bag Stuffer">Bag Stuffer</option>
+            <option value="Save It (Sale)">Save It (Sale)</option>
+            <option value="Dollar Days">Dollar Days</option>
+            <option value="Discount Frenzy">Discount Frenzy</option>
+            <option value="Sales Days">Sales Days</option>
+            <option value="Sale : Double Down">Sale : Double Down</option>
+            <option value="Coupon Spectacular">Coupon Spectacular</option>
+            <option value="Three for One">Three for One</option>
+            <option value="Super Duper Savers">Super Duper Savers</option>
+            <option value="GLD">GLD</option>
+            <option value="Go For It">Go For It</option>
+            <option value="Mystery Sale">Mystery Sale</option>
+            <option value="One Day Sale">One Day Sale</option>
+            <option value="I Cant Believe It Sale">I Cant Believe It
+              Sale</option>
+            <option value="You Save Days">You Save Days</option>
+            <option value="Double Your Savings">Double Your Savings</option>
+            <option value="Full Free">Full Free</option>
+            <option value="Saving Days">Saving Days</option>
+            <option value="Roller Savings (High)">Roller Savings (High)</option>
+            <option value="Green Light Special">Green Light Special</option>
+            <option value="Price Slashers">Price Slashers</option>
+            <option value="Price Cutters">Price Cutters</option>
+            <option value="Two for One">Two for One</option>
+            <option value="Promo Big">Promo Big</option>
+            <option value="Tip Top Savings">Tip Top Savings</option>
+            <option value="Price Destroyers">Price Destroyers</option>
+            <option value="Best Price Savers">Best Price Savers</option>
+            <option value="Super Wallet Savers">Super Wallet Savers</option>
+            <option value="Price Smashers">Price Smashers</option>
+            <option value="Fantastic Discounts">Fantastic Discounts</option>
           </select>
         </div>
+
+        <div class="user-box"><select name='Store Kind' required="required">
+            <option value disabled selected>Select Store Kind</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Supermarket">Supermarket</option>
+            <option value="Gourmet">Gourmet</option>
+            <option value="Mid-Size">Mid-Size</option>
+            <option value="Small Grocery">Small Grocery</option>
+          </select>
+        </div><div class="user-box"><input type="text" name='Store Sales'
+            placeholder='Store Sales'
+            required="required" />
+        </div><div class="user-box"><input type="text" name='Net Weight'
+            placeholder='Net Weight'
+            required="required" />
+        </div><div class="user-box"><input type="text" name='Package Weight'
+            placeholder='Package Weight'
+            required="required" />
+        </div><div class="user-box"><select name='Is Recyclable'
+            required="required">
+            <option value disabled selected>Is Recyclable?</option>
+            <option value="recyclable">Recyclable</option>
+            <option value="non recyclable">Non Recyclable</option>
+          </select>
+        </div><div class="user-box"><select name='Yearly Income'
+            required="required">
+            <option value disabled selected>Select Yearly Income</option>
+            <option value="10K+">10K+</option>
+            <option value="50K+">50K+</option>
+            <option value="30K+">30K+</option>
+            <option value="130K+">130K+</option>
+            <option value="70K+">70K+</option>
+            <option value="110K+">110K+</option>
+            <option value="90K+">90K+</option>
+            <option value="150K+">150K+</option>
+          </select>
+
+        </div><div class="user-box"><input type="text" name='Store Area'
+            placeholder='Store Area'
+            required="required" />
+        </div><div class="user-box"><input type="text" name='Frozen Area'
+            placeholder='Frozen Area'
+            required="required" /></div>
         <!-- Add select elements for other attributes similarly -->
         <button type="submit">Predict</button>
       </form>

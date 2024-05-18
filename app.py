@@ -21,13 +21,14 @@ def predict():
         return jsonify({'prediction': prediction[0]})
     else:
         input_data = input_data.form.to_dict()
-        input_data = np.array(list(input_data.values())).reshape(1, -1)
-        prediction = model.predict(input_data)
-        return render_template('index.html', prediction_text='The predicted Cost is: '+str(round(prediction[0],2)))
 
+    input_data = np.array(list(input_data.values())).reshape(1, -1)
+    prediction = model.predict(input_data)
+
+    return render_template('index.html', prediction_text='The predicted Cost is: '+str(round(prediction[0],2)))
     
 
-    
+
     
 if __name__ == '__main__':
     app.run(debug=True)
